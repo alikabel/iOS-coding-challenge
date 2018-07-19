@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="width" secondItem="4aL-eT-5bG" secondAttribute="height" multiplier="13:5" id="vCg-SQ-gV6"/>
                                 </constraints>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSA-gd-M36"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUt-Zc-OJ0">
                                 <rect key="frame" x="35" y="47" width="304" height="21"/>
@@ -47,6 +50,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="gUt-Zc-OJ0" id="RnL-GS-J61"/>
+                        <outlet property="recordButton" destination="4aL-eT-5bG" id="8vF-X1-AYi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
