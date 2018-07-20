@@ -14,6 +14,9 @@
 		1F0AC00F20FB7F51004BD101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0AC00D20FB7F51004BD101 /* LaunchScreen.storyboard */; };
 		1F0AC01A20FB7F51004BD101 /* AutoLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0AC01920FB7F51004BD101 /* AutoLabsTests.swift */; };
 		1F0AC02520FB7F51004BD101 /* AutoLabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0AC02420FB7F51004BD101 /* AutoLabsUITests.swift */; };
+		1FF6397D210122B600D222BD /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6397C210122B600D222BD /* HTTPClient.swift */; };
+		1FF639802101239600D222BD /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6397F2101239600D222BD /* City.swift */; };
+		1FF639822101290100D222BD /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF639812101290100D222BD /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		1F0AC02020FB7F51004BD101 /* AutoLabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0AC02420FB7F51004BD101 /* AutoLabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLabsUITests.swift; sourceTree = "<group>"; };
 		1F0AC02620FB7F51004BD101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FF6397C210122B600D222BD /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		1FF6397F2101239600D222BD /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		1FF639812101290100D222BD /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		1F0AC00320FB7F51004BD101 /* AutoLabs */ = {
 			isa = PBXGroup;
 			children = (
+				1FF6397E2101237800D222BD /* Models */,
+				1FF6397B2101228000D222BD /* Network */,
 				1F0AC00420FB7F51004BD101 /* AppDelegate.swift */,
 				1F0AC00620FB7F51004BD101 /* ViewController.swift */,
 				1F0AC00820FB7F51004BD101 /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				1F0AC02620FB7F51004BD101 /* Info.plist */,
 			);
 			path = AutoLabsUITests;
+			sourceTree = "<group>";
+		};
+		1FF6397B2101228000D222BD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1FF6397C210122B600D222BD /* HTTPClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1FF6397E2101237800D222BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FF6397F2101239600D222BD /* City.swift */,
+				1FF639812101290100D222BD /* WeatherData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F0AC00720FB7F51004BD101 /* ViewController.swift in Sources */,
+				1FF639822101290100D222BD /* WeatherData.swift in Sources */,
 				1F0AC00520FB7F51004BD101 /* AppDelegate.swift in Sources */,
+				1FF639802101239600D222BD /* City.swift in Sources */,
+				1FF6397D210122B600D222BD /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
